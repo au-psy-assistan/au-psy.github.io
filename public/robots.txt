@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://au-psy-assistan.github.io/au-psy.github.io/sitemap.xml
