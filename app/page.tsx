@@ -20,14 +20,13 @@ export default function Home() {
         <div className="circuit-lines" aria-hidden="true" />
         <div className="hero-copy">
           <p className="eyebrow"><span /> Telegram-бот для психологов</p>
-          <h1>Сессия закончилась.<br />Работа с ней — нет.</h1>
+          <h1>Запись сессии — в текст и отчёт.</h1>
           <p className="hero-lead">
-            AU расшифровывает консультацию, собирает конспект и подсвечивает
-            когнитивные искажения — чтобы психолог видел важное, а не боролся
-            с заметками.
+            Отправьте аудиозапись в Telegram-бот. AU вернёт расшифровку,
+            конспект, разметку когнитивных искажений и PDF-отчёт.
           </p>
           <div className="hero-actions">
-            <a className="button button-dark" href="#how">Как это работает <span>↓</span></a>
+            <a className="button button-dark" href="#how">Посмотреть процесс <span>↓</span></a>
             <a className="button button-light" href="mailto:a.arinicheva@g.nsu.ru">Написать команде</a>
           </div>
           <ul className="hero-tags" aria-label="Основные возможности">
@@ -58,7 +57,7 @@ export default function Home() {
       </section>
 
       <section className="intro-strip" aria-label="Коротко о продукте">
-        <p>Один бот. Три результата.</p>
+        <p>AU формирует</p>
         <div><span>01</span> Расшифровка</div>
         <div><span>02</span> Структурированный конспект</div>
         <div><span>03</span> Аналитика сессии</div>
@@ -66,29 +65,28 @@ export default function Home() {
 
       <section className="section problem-section" id="problem">
         <div className="section-heading split-heading">
-          <p className="section-kicker">Зачем это нужно</p>
-          <h2>Внимание психолога должно быть у клиента.</h2>
+          <p className="section-kicker">Задача</p>
+          <h2>Меньше ручной работы после сессии.</h2>
           <p className="section-summary">
-            Во время консультации специалист одновременно слушает, наблюдает,
-            задаёт вопросы и ведёт записи. AU забирает работу с материалом
-            сессии после разговора.
+            Разбор записи, конспект и сравнение встреч требуют отдельного
+            времени. AU собирает эти материалы автоматически.
           </p>
         </div>
         <div className="problem-grid">
           <article className="problem-card card-wide">
             <span className="card-index">01</span>
-            <h3>Информация теряется</h3>
-            <p>Ручной конспект неизбежно оставляет за кадром детали речи и контекст диалога.</p>
+            <h3>Сохранить детали разговора</h3>
+            <p>Расшифровка фиксирует реплики клиента и психолога целиком, а не только заметки, сделанные во время сессии.</p>
           </article>
           <article className="problem-card">
             <span className="card-index">02</span>
-            <h3>Рутина отнимает ресурс</h3>
-            <p>После сессии нужно восстановить заметки, собрать выводы и подготовиться к следующей встрече.</p>
+            <h3>Получить конспект</h3>
+            <p>После обработки бот собирает основные темы разговора в структурированный документ.</p>
           </article>
           <article className="problem-card card-accent">
             <span className="card-index">03</span>
-            <h3>Динамику сложно увидеть</h3>
-            <p>Повторяющиеся паттерны легче заметить, когда материалы нескольких сессий собраны в одной структуре.</p>
+            <h3>Сравнить сессии</h3>
+            <p>В отчёте можно посмотреть, как меняется выраженность отмеченных когнитивных искажений.</p>
           </article>
         </div>
       </section>
@@ -96,26 +94,26 @@ export default function Home() {
       <section className="section how-section" id="how">
         <div className="section-heading light-heading">
           <p className="section-kicker">Как работает AU</p>
-          <h2>От аудио до понятного отчёта.</h2>
+          <h2>Три шага внутри Telegram.</h2>
         </div>
         <div className="steps-grid">
           <article className="step-card">
             <span>01</span>
             <div className="step-icon">●</div>
-            <h3>Загрузить запись</h3>
+            <h3>Отправить аудио</h3>
             <p>Психолог отправляет в Telegram-бот аудиофайл консультации или голосовое сообщение.</p>
           </article>
           <article className="step-card">
             <span>02</span>
             <div className="step-icon">≋</div>
-            <h3>Получить расшифровку</h3>
-            <p>Сервис переводит разговор в текст и формирует структурированный конспект сессии.</p>
+            <h3>Дождаться обработки</h3>
+            <p>Партнёрский сервис расшифровывает запись, после чего AU анализирует полученный текст.</p>
           </article>
           <article className="step-card">
             <span>03</span>
             <div className="step-icon">↗</div>
-            <h3>Проверить аналитику</h3>
-            <p>AU подсвечивает найденные паттерны и собирает сводный PDF-отчёт для специалиста.</p>
+            <h3>Скачать PDF</h3>
+            <p>Бот возвращает расшифровку, конспект, разметку и график по когнитивным искажениям в одном файле.</p>
           </article>
         </div>
         <figure className="workflow-figure">
@@ -126,25 +124,25 @@ export default function Home() {
 
       <section className="section result-section" id="result">
         <div className="section-heading split-heading">
-          <p className="section-kicker">Что получает специалист</p>
-          <h2>Не чёрный ящик, а материал для проверки.</h2>
+          <p className="section-kicker">Результат</p>
+          <h2>Каждую метку можно сверить с расшифровкой.</h2>
           <p className="section-summary">
-            Разметка показывает фрагменты речи, на которых основан вывод.
-            Психолог может согласиться с результатом или скорректировать его.
+            AU выделяет фрагменты текста, по которым алгоритм отнёс реплику
+            к определённому когнитивному искажению.
           </p>
         </div>
         <div className="result-grid">
           <article className="result-card result-transcript">
             <div className="result-card-head">
               <div><span>01</span><h3>Размеченный конспект</h3></div>
-              <p>Цветом выделены эмоции, ситуации и возможные когнитивные искажения.</p>
+              <p>В тексте отмечены фразы клиента и соответствующие им категории искажений.</p>
             </div>
             <img src="./assets/transcript.webp" alt="Пример цветовой разметки конспекта консультации" />
           </article>
           <article className="result-card result-progress">
             <div className="result-card-head">
               <div><span>02</span><h3>Отчёт о динамике</h3></div>
-              <p>Сводные показатели помогают сравнивать наблюдения от сессии к сессии.</p>
+              <p>Диаграмма показывает изменение отмеченных категорий по сессиям.</p>
             </div>
             <img src="./assets/progress.webp" alt="Пример отчёта AU о динамике когнитивных искажений" />
           </article>
@@ -153,71 +151,70 @@ export default function Home() {
 
       <section className="section proof-section" aria-labelledby="proof-title">
         <div className="proof-copy">
-          <p className="section-kicker">Технологический подход</p>
-          <h2 id="proof-title">Интерпретируемость заложена в продукт.</h2>
+          <p className="section-kicker">Как принимается решение</p>
+          <h2 id="proof-title">Основание для метки видно в тексте.</h2>
           <p>
-            Алгоритм анализирует текстовые признаки и показывает специалисту,
-            какие слова и фразы повлияли на результат. Это делает выводы
-            проверяемыми и позволяет улучшать модель на обратной связи.
+            Алгоритм ищет в расшифровке текстовые шаблоны и характерные признаки.
+            Фразы, на которых основана метка, выделяются в тексте. Психолог
+            проверяет разметку и при необходимости сообщает об ошибке.
           </p>
-          <p className="proof-note">AU — вспомогательный инструмент. Итоговую профессиональную оценку всегда делает психолог.</p>
+          <p className="proof-note">AU не ставит диагноз и не заменяет психолога. Разметку проверяет специалист.</p>
         </div>
         <div className="metric-panel">
-          <p>Внутренние испытания алгоритма</p>
-          <div className="metric-row"><strong>&gt;90%</strong><span>точность бинарной классификации</span></div>
-          <div className="metric-row"><strong>&gt;70%</strong><span>точность мультиклассового распознавания</span></div>
-          <small>Показатели приводятся по материалам проекта и будут актуализированы после следующего цикла тестирования.</small>
+          <p>Результаты внутренних тестов</p>
+          <div className="metric-row"><strong>&gt;90%</strong><span>точность при разделении текста на два класса</span></div>
+          <div className="metric-row"><strong>&gt;70%</strong><span>точность при распознавании нескольких классов</span></div>
+          <small>Данные команды для текущей версии алгоритма. Метрики будут пересчитаны после расширения тестовой выборки.</small>
         </div>
       </section>
 
       <section className="section price-section" id="pricing">
         <div className="section-heading center-heading">
           <p className="section-kicker">Тарифы MVP</p>
-          <h2>Стоимость зависит только от объёма практики.</h2>
-          <p className="section-summary">Во всех тарифах доступны конспект, разметка и отчёт о динамике.</p>
+          <h2>Три тарифа Telegram-бота.</h2>
+          <p className="section-summary">Набор функций одинаковый; меняется месячный лимит консультаций.</p>
         </div>
         <div className="price-grid">
           <article className="price-card">
             <p className="price-name">Basic</p>
             <div className="price"><strong>1 499 ₽</strong><span>/ месяц</span></div>
             <p className="price-limit">До 25 консультаций в месяц</p>
-            <ul><li>Расшифровка аудио</li><li>Конспект сессии</li><li>Разметка когнитивных искажений</li></ul>
+            <ul><li>Расшифровка и конспект</li><li>Разметка искажений</li><li>PDF-отчёт</li></ul>
           </article>
           <article className="price-card price-featured">
-            <div className="popular-badge">Оптимальный</div>
             <p className="price-name">Pro</p>
             <div className="price"><strong>2 499 ₽</strong><span>/ месяц</span></div>
             <p className="price-limit">До 50 консультаций в месяц</p>
-            <ul><li>Всё из тарифа Basic</li><li>Больше сессий</li><li>Отчёты о динамике клиента</li></ul>
+            <ul><li>Расшифровка и конспект</li><li>Разметка искажений</li><li>PDF-отчёт</li></ul>
           </article>
           <article className="price-card">
             <p className="price-name">Super Pro</p>
             <div className="price"><strong>3 999 ₽</strong><span>/ месяц</span></div>
             <p className="price-limit">Более 50 консультаций в месяц</p>
-            <ul><li>Всё из тарифа Pro</li><li>Для интенсивной практики</li><li>Приоритетная обратная связь</li></ul>
+            <ul><li>Расшифровка и конспект</li><li>Разметка искажений</li><li>PDF-отчёт</li></ul>
           </article>
         </div>
-        <p className="price-caption">Тарифы приведены по актуальной презентации MVP. Условия подключения будут уточнены перед запуском.</p>
+        <p className="price-caption">Бот находится на этапе MVP. Дату подключения и условия оплаты команда сообщит перед запуском.</p>
       </section>
 
       <section className="section roadmap-section" id="roadmap">
         <div className="section-heading split-heading">
-          <p className="section-kicker">Развитие проекта</p>
-          <h2>От исследования — к пилоту.</h2>
-          <p className="section-summary">Команда прошла первые программы поддержки, сформировала партнёрства и развивает MVP вместе с практикующими психологами.</p>
+          <p className="section-kicker">Статус проекта</p>
+          <h2>Что сделано к 2026 году.</h2>
+          <p className="section-summary">Проведено более 40 интервью, заключены партнёрства и получена поддержка программы «Студенческий стартап».</p>
         </div>
         <ol className="roadmap">
-          <li className="done"><span>2024</span><strong>Победа в А:СТАРТ</strong><p>Комплексная аналитика проекта и более 40 интервью с целевой аудиторией.</p></li>
+          <li className="done"><span>2024</span><strong>Программа А:СТАРТ</strong><p>Проведено более 40 интервью с психологами и собрана аналитика по продукту.</p></li>
           <li className="done"><span>2024</span><strong>Партнёрства</strong><p>НГУ, РАНХиГС и Ассоциация психологов Ульяновской области.</p></li>
-          <li className="done"><span>2025</span><strong>Студенческий стартап</strong><p>Победа в VI волне программы Фонда содействия инновациям.</p></li>
-          <li><span>Следующий этап</span><strong>Тестирование и запуск</strong><p>Пилоты с профессионалами, доработка функций и первые подключения.</p></li>
+          <li className="done"><span>2025</span><strong>Грант «Студенческий стартап»</strong><p>Проект вошёл в VI волну программы Фонда содействия инновациям.</p></li>
+          <li><span>Далее</span><strong>Тестирование MVP</strong><p>Проверка бота с практикующими психологами и доработка по обратной связи.</p></li>
         </ol>
       </section>
 
       <section className="section team-section" id="team">
         <div className="section-heading center-heading">
           <p className="section-kicker">Команда</p>
-          <h2>Математика, продукт и практика.</h2>
+          <h2>Команда AU.</h2>
         </div>
         <div className="team-grid">
           <article className="team-card">
@@ -239,8 +236,8 @@ export default function Home() {
         <div className="contact-box">
           <div>
             <p className="section-kicker">Связаться с командой</p>
-            <h2>Хотите принять участие в тестировании AU?</h2>
-            <p>Расскажите о своей практике — мы ответим на вопросы и сообщим о следующих этапах проекта.</p>
+            <h2>Записаться на тестирование AU</h2>
+            <p>Напишите на почту: укажите специализацию и примерное число консультаций в месяц.</p>
           </div>
           <a className="button button-white" href="mailto:a.arinicheva@g.nsu.ru">a.arinicheva@g.nsu.ru <span>↗</span></a>
         </div>
