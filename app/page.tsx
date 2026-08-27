@@ -201,7 +201,7 @@ export default function Home() {
             <ul><li>Расшифровка и конспект</li><li>Разметка искажений</li><li>PDF-отчёт</li></ul>
           </article>
         </div>
-        <p className="price-caption">Приложение находится на этапе MVP. Дату подключения и условия оплаты команда сообщит перед запуском.</p>
+        <p className="price-caption">Приложение находится на этапе создания прототипа продукта. Дату подключения и условия оплаты команда сообщит перед запуском.</p>
       </section>
 
       <section className="section roadmap-section" id="roadmap">
