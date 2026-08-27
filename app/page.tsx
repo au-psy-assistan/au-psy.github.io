@@ -3,8 +3,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="AU — на главную">
-          <img src="./assets/au-logo.webp" alt="" />
-          <span>AU</span>
+          <img src="./assets/au-logo-new.png" alt="" />
         </a>
         <nav aria-label="Основная навигация">
           <a href="#how">Как работает</a>
@@ -19,10 +18,10 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="circuit-lines" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow"><span /> Telegram-бот для психологов</p>
-          <h1>Запись сессии — в текст и отчёт.</h1>
+          <p className="eyebrow"><span /> Приложение для психологов</p>
+          <h1>Решение для эффективных специалистов</h1>
           <p className="hero-lead">
-            Отправьте аудиозапись в Telegram-бот. AU вернёт расшифровку,
+            Отправьте аудиозапись в приложение. AU вернёт расшифровку,
             конспект, разметку когнитивных искажений и PDF-отчёт.
           </p>
           <div className="hero-actions">
@@ -58,9 +57,9 @@ export default function Home() {
 
       <section className="intro-strip" aria-label="Коротко о продукте">
         <p>AU формирует</p>
-        <div><span>01</span> Расшифровка</div>
+        <div><span>01</span> Расшифровку</div>
         <div><span>02</span> Структурированный конспект</div>
-        <div><span>03</span> Аналитика сессии</div>
+        <div><span>03</span> Аналитику сессии</div>
       </section>
 
       <section className="section problem-section" id="problem">
@@ -81,12 +80,12 @@ export default function Home() {
           <article className="problem-card">
             <span className="card-index">02</span>
             <h3>Получить конспект</h3>
-            <p>После обработки бот собирает основные темы разговора в структурированный документ.</p>
+            <p>После обработки AU собирает основные темы разговора в структурированный документ.</p>
           </article>
           <article className="problem-card card-accent">
             <span className="card-index">03</span>
             <h3>Сравнить сессии</h3>
-            <p>В отчёте можно посмотреть, как меняется выраженность отмеченных когнитивных искажений.</p>
+            <p>В отчёте можно посмотреть, как меняется выраженность выявленных когнитивных искажений.</p>
           </article>
         </div>
       </section>
@@ -94,14 +93,14 @@ export default function Home() {
       <section className="section how-section" id="how">
         <div className="section-heading light-heading">
           <p className="section-kicker">Как работает AU</p>
-          <h2>Три шага внутри Telegram.</h2>
+          <h2>Три шага внутри приложения.</h2>
         </div>
         <div className="steps-grid">
           <article className="step-card">
             <span>01</span>
             <div className="step-icon">●</div>
             <h3>Отправить аудио</h3>
-            <p>Психолог отправляет в Telegram-бот аудиофайл консультации или голосовое сообщение.</p>
+            <p>Психолог загружает в приложение аудиозапись консультации.</p>
           </article>
           <article className="step-card">
             <span>02</span>
@@ -113,19 +112,15 @@ export default function Home() {
             <span>03</span>
             <div className="step-icon">↗</div>
             <h3>Скачать PDF</h3>
-            <p>Бот возвращает расшифровку, конспект, разметку и график по когнитивным искажениям в одном файле.</p>
+            <p>Приложение формирует расшифровку, конспект, разметку и график по когнитивным искажениям в одном файле.</p>
           </article>
         </div>
-        <figure className="workflow-figure">
-          <img src="./assets/workflow.webp" alt="Схема работы AU: аудиозапись, Telegram-бот и отчёт психолога" />
-          <figcaption>Текущий сценарий MVP в Telegram</figcaption>
-        </figure>
       </section>
 
       <section className="section result-section" id="result">
         <div className="section-heading split-heading">
           <p className="section-kicker">Результат</p>
-          <h2>Каждую метку можно сверить с расшифровкой.</h2>
+          <h2>Сверьте каждую метку с&nbsp;расшифровкой.</h2>
           <p className="section-summary">
             AU выделяет фрагменты текста, по которым алгоритм отнёс реплику
             к определённому когнитивному искажению.
@@ -137,14 +132,14 @@ export default function Home() {
               <div><span>01</span><h3>Размеченный конспект</h3></div>
               <p>В тексте отмечены фразы клиента и соответствующие им категории искажений.</p>
             </div>
-            <img src="./assets/transcript.webp" alt="Пример цветовой разметки конспекта консультации" />
+            <img src="./assets/transcript-new.png" alt="Пример цветовой разметки конспекта консультации" />
           </article>
           <article className="result-card result-progress">
             <div className="result-card-head">
               <div><span>02</span><h3>Отчёт о динамике</h3></div>
-              <p>Диаграмма показывает изменение отмеченных категорий по сессиям.</p>
+              <p>Диаграмма показывает изменение выявленных категорий по сессиям.</p>
             </div>
-            <img src="./assets/progress.webp" alt="Пример отчёта AU о динамике когнитивных искажений" />
+            <img src="./assets/progress-new.png" alt="Пример отчёта AU о динамике когнитивных искажений" />
           </article>
         </div>
       </section>
@@ -152,11 +147,23 @@ export default function Home() {
       <section className="section proof-section" aria-labelledby="proof-title">
         <div className="proof-copy">
           <p className="section-kicker">Как принимается решение</p>
-          <h2 id="proof-title">Основание для метки видно в тексте.</h2>
+          <h2 id="proof-title">Основание для метки отражено в тексте.</h2>
           <p>
-            Алгоритм ищет в расшифровке текстовые шаблоны и характерные признаки.
+            Алгоритм ищет в расшифровке языковые паттерны, характерные для когнитивных искажений.
             Фразы, на которых основана метка, выделяются в тексте. Психолог
             проверяет разметку и при необходимости сообщает об ошибке.
+          </p>
+          <p className="proof-foundation">
+            В основе разметки — перечень типичных когнитивных искажений Дэвида
+            Бернса и когнитивная модель Аарона Бека. Бек заложил основы
+            когнитивной терапии, из которой выросла КПТ, и связывал искажения с
+            автоматическими мыслями, выявляемыми в высказываниях пациента. В AU
+            их признаки анализируются как языковые паттерны в расшифровке.
+            <span>
+              Источники: <a href="https://feelinggood.com/2016/11/18/podcast-10-negative-and-positive-distortions-part-1/" target="_blank" rel="noreferrer">Дэвид Бернс</a>
+              {' · '}
+              <a href="https://beckinstitute.org/about/dr-aaron-t-beck/" target="_blank" rel="noreferrer">Институт Бека</a>
+            </span>
           </p>
           <p className="proof-note">AU не ставит диагноз и не заменяет психолога. Разметку проверяет специалист.</p>
         </div>
@@ -171,30 +178,30 @@ export default function Home() {
       <section className="section price-section" id="pricing">
         <div className="section-heading center-heading">
           <p className="section-kicker">Тарифы MVP</p>
-          <h2>Три тарифа Telegram-бота.</h2>
+          <h2>Тарифы приложения</h2>
           <p className="section-summary">Набор функций одинаковый; меняется месячный лимит консультаций.</p>
         </div>
         <div className="price-grid">
           <article className="price-card">
             <p className="price-name">Basic</p>
-            <div className="price"><strong>1 499 ₽</strong><span>/ месяц</span></div>
+            <div className="price"><strong>2 499 ₽</strong><span>/ месяц</span></div>
             <p className="price-limit">До 25 консультаций в месяц</p>
             <ul><li>Расшифровка и конспект</li><li>Разметка искажений</li><li>PDF-отчёт</li></ul>
           </article>
           <article className="price-card price-featured">
             <p className="price-name">Pro</p>
-            <div className="price"><strong>2 499 ₽</strong><span>/ месяц</span></div>
+            <div className="price"><strong>4 999 ₽</strong><span>/ месяц</span></div>
             <p className="price-limit">До 50 консультаций в месяц</p>
             <ul><li>Расшифровка и конспект</li><li>Разметка искажений</li><li>PDF-отчёт</li></ul>
           </article>
           <article className="price-card">
             <p className="price-name">Super Pro</p>
-            <div className="price"><strong>3 999 ₽</strong><span>/ месяц</span></div>
+            <div className="price"><strong>9 999 ₽</strong><span>/ месяц</span></div>
             <p className="price-limit">Более 50 консультаций в месяц</p>
             <ul><li>Расшифровка и конспект</li><li>Разметка искажений</li><li>PDF-отчёт</li></ul>
           </article>
         </div>
-        <p className="price-caption">Бот находится на этапе MVP. Дату подключения и условия оплаты команда сообщит перед запуском.</p>
+        <p className="price-caption">Приложение находится на этапе MVP. Дату подключения и условия оплаты команда сообщит перед запуском.</p>
       </section>
 
       <section className="section roadmap-section" id="roadmap">
@@ -207,7 +214,7 @@ export default function Home() {
           <li className="done"><span>2024</span><strong>Программа А:СТАРТ</strong><p>Проведено более 40 интервью с психологами и собрана аналитика по продукту.</p></li>
           <li className="done"><span>2024</span><strong>Партнёрства</strong><p>НГУ, РАНХиГС и Ассоциация психологов Ульяновской области.</p></li>
           <li className="done"><span>2025</span><strong>Грант «Студенческий стартап»</strong><p>Проект вошёл в VI волну программы Фонда содействия инновациям.</p></li>
-          <li><span>Далее</span><strong>Тестирование MVP</strong><p>Проверка бота с практикующими психологами и доработка по обратной связи.</p></li>
+          <li><span>Далее</span><strong>Тестирование MVP</strong><p>Проверка приложения с практикующими психологами и доработка по обратной связи.</p></li>
         </ol>
       </section>
 
@@ -218,15 +225,15 @@ export default function Home() {
         </div>
         <div className="team-grid">
           <article className="team-card">
-            <img src="./assets/anna.webp" alt="Ариничева Анна" />
+            <img src="./assets/anna-new.png" alt="Ариничева Анна" />
             <div><h3>Ариничева Анна</h3><p>Руководитель проекта, маркетолог</p><small>Опыт проектной деятельности более двух лет</small></div>
           </article>
           <article className="team-card">
-            <img src="./assets/anton.webp" alt="Колонин Антон" />
+            <img src="./assets/anton-new.jpg" alt="Колонин Антон" />
             <div><h3>Колонин Антон</h3><p>Научный руководитель проекта</p><small>Проекты «Здоровье Онлайн», Aigents и другие</small></div>
           </article>
           <article className="team-card">
-            <img src="./assets/evgeny.webp" alt="Евгений Бражников" />
+            <img src="./assets/evgeny-new.jpg" alt="Евгений Бражников" />
             <div><h3>Евгений Бражников</h3><p>Разработчик Backend, ML</p><small>Опыт корпоративной разработки более двух лет</small></div>
           </article>
         </div>
@@ -255,7 +262,7 @@ export default function Home() {
       </section>
 
       <footer className="site-footer">
-        <a className="brand footer-brand" href="#top"><img src="./assets/au-logo.webp" alt="" /><span>AU</span></a>
+        <a className="brand footer-brand" href="#top" aria-label="AU — на главную"><img src="./assets/au-logo-new.png" alt="" /></a>
         <p>Ассистент психолога</p>
         <a href="mailto:a.arinicheva@g.nsu.ru">a.arinicheva@g.nsu.ru</a>
         <p>© 2026 AU</p>

@@ -4,11 +4,11 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://au-psy-assistan.github.io/au-psy.github.io/'),
   title: 'AU — ассистент психолога',
-  description: 'Telegram-бот для расшифровки консультаций, конспекта, разметки когнитивных искажений и PDF-отчёта.',
+  description: 'Приложение для расшифровки консультаций, конспекта, разметки когнитивных искажений и PDF-отчёта.',
   icons: { icon: './favicon.png' },
   openGraph: {
     title: 'AU — ассистент психолога',
-    description: 'Расшифровка, конспект и разметка когнитивных искажений в Telegram.',
+    description: 'Расшифровка, конспект и разметка когнитивных искажений в приложении AU.',
     type: 'website',
     locale: 'ru_RU',
     url: './',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'AU — ассистент психолога',
-    description: 'Расшифровка, конспект и разметка когнитивных искажений в Telegram.',
+    description: 'Расшифровка, конспект и разметка когнитивных искажений в приложении AU.',
     images: ['./og.png'],
   },
 };
